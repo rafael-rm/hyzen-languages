@@ -45,7 +45,9 @@ HyzenLang.Initialize(settings);
 Para buscar uma tradução:
 
 ```cs
-var texto = HyzenLang.Get().GetText("chave_da_mensagem", new { Nome = "Usuário" }); Console.WriteLine(texto);
+string texto1 = HyzenLang.Get().GetText("chave_da_mensagem");
+string texto2 = HyzenLang.Get().GetText("chave_da_mensagem", new { Nome = "Usuário" });
+string texto3 = HyzenLang.Get().GetText("chave_da_mensagem", new { Nome = "Rafael", Idade = 21, Username = "rafael-rm" }));
 ```
 
 
