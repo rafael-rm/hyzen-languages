@@ -1,0 +1,5 @@
+{
+  "HelloWorld": "Olá Mundo!",
+  "GoodbyeWorld": "Adeus Mundo!",
+  "Welcome": "Bem-vindo! {{name}}!"
+}

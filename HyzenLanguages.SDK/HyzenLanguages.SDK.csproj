@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <PackageId>Hyzen.SDK</PackageId>
+        <RepositoryUrl>https://github.com/rafael-rm/hyzen-languages</RepositoryUrl>
+        <LangVersion>12</LangVersion>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <vMinor>$([System.DateTime]::Now.ToString("yyMM"))</vMinor>
+        <vBuild>$([System.DateTime]::Now.ToString("dHH"))</vBuild>
+        <vRevision>$([System.DateTime]::Now.ToString("mm"))</vRevision>
+        <VersionPrefix>1.$(vMinor).$(vBuild).$(vRevision)</VersionPrefix>
+        <PackageVersion>1.$(vMinor).$(vBuild).$(vRevision)</PackageVersion>
+        <AssemblyVersion>1.$(vMinor).$(vBuild).$(vRevision)</AssemblyVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    </ItemGroup>
+
+</Project>
