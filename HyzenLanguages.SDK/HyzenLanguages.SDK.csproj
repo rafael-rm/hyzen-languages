@@ -4,6 +4,7 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>disable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>Hyzen.Languages</PackageId>
         <RepositoryUrl>https://github.com/rafael-rm/hyzen-languages</RepositoryUrl>
         <LangVersion>12</LangVersion>
