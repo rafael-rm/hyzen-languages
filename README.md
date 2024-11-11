@@ -27,7 +27,14 @@ dotnet add package HyzenLang
 ```cs
 using HyzenLanguages.SDK;
 
-var settings = new Settings { LocalesPath = "caminho/para/locales", DefaultLanguage = "en", PreLoadAllLocales = true, AutoDetectLanguage = true, DebugMode = true };
+var settings = new Settings
+{
+    LocalesPath = "caminho/para/locales",
+    DefaultLanguage = "en",
+    PreLoadAllLocales = true,
+    AutoDetectLanguage = true,
+    DebugMode = true
+};
 
 HyzenLang.Initialize(settings);
 ```
